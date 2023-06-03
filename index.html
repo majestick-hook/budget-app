@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Budgeting</title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="nav">
+            <p>Budget:</p><p id="budget">00</p>
+        </div>
+        <div class="nav">
+            <p>Expenses:</p><p id="expenses">00</p>
+        </div>
+        <div class="nav">
+            <p>Balance:</p><p id="balance" >00</p>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="outing" class="ctg">
+            <h3>Outing</h3>
+            <div class="amount">
+                <p>$ </p> <p id = "outing-expense"> 00</p>
+            </div>
+            <!-- <div id="description"></div> -->
+        </div>
+        <div id="shopping" class="ctg">
+            <h3>Shopping</h3>
+            <div class="amount">
+                <p>$ </p><p id = "shopping-expense">00<p>
+            </div>
+            <!-- <div id="description"></div> -->
+        </div>
+        <div id="emi" class="ctg">
+            <h3>Installments</h3>
+            <div class="amount">
+                <p>$ </p><p id = "installment-expense">00<p>
+            </div>
+            <!-- <div id="description"></div> -->
+        </div>
+        <div id="grocery" class="ctg">
+            <h3>Grocery</h3>
+            <div class="amount">
+                <p>$ </p><p id = "grocery-expense">00<p>
+            </div>
+            <!-- <div id="description"></div> -->
+        </div>
+        <div id="others" class="ctg">
+            <h3>Others</h3>
+            <div class="amount">
+                <p>$ </p><p id = "others-expense">00<p>
+                </div>
+                <!-- <div id="description"></div> -->
+            </div>
+        </div>
+        <div class="form">
+            <h2>
+                Set Budget:
+            </h2>
+            <input type="number" id="setBudget" placeholder="$">
+            <input type="button" class="btn" value="Set" onclick="addBudget()" id="set">
+        </div>
+        <div class="form">
+            <h2>Add Expense:</h2>
+            <form id="form">
+            <label for="dueDate">Due Date:</label>
+            <input type="date" name="dueDate" id="dueDate">
+            <label for="amt">Amount:</label>
+            <input type="number" name="amount" id="amt" placeholder="$">
+            <label for="ctg">Category:</label>
+            <select name="ctg" id="ctg">
+                <option value="select">Select Category</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Installments">Installments</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Others">Others</option>
+            </select>
+            <label for="des">Description:</label>
+            <input type="text" placeholder="enter description" id="des">
+            <label for="pmd">Payment Date:</label>
+            <input type="date" name="pmd" id="pmd">
+            <!-- <input type="button" value="Submit" onclick= "submit();" id="sumbit"> -->
+            <input type="button" id="submit" value="Submit" class="btn" onclick="addExpense()">
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

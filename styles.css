@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    /* position: fixed; */
+    margin-bottom: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+}
+.nav{
+    background-color: rgb(94, 99, 121);
+    width: 10%;
+    margin: auto 0px;
+    height: 69%;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+}
+.container{
+    color: black;
+    position: inherit;
+    background-color: rgb(94, 99, 121);
+    border-radius: 25px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0px 15%;
+}
+.ctg{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: rgb(191, 250, 252);
+    border-radius: 25px;
+
+}
+.amount{
+    display: flex;
+}
+.form{
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    background-color: rgb(94, 99, 121);
+    margin: 10px auto;
+    width: 50%;
+    padding: 5px;
+}
+input, label, select{
+    width: 90%;
+    margin: 10px 5%;
+}
+.nav p{
+    margin: 0px;
+}
+.form h2{
+    margin: 20px 10px;
+}
+input, select{
+    border: none;
+    border-radius: 5px;
+}
+.btn{
+    width: 30%;
+    height: 50px;
+    margin: 20px 35%;
+    border-radius: 25px;
+    background-color: rgb(191, 250, 252);
+}
